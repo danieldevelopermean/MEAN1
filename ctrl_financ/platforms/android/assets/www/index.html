@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+
+	<link href="Content/ionic.min.css" rel="stylesheet" />
+</head>
+
+<body ng-app="ctrlFinan">
+
+<!-- Corpo do cabecalho -->
+<header> 
+
+	<div class="bar bar-header bar-royal">
+		<h1 class="title">Controle Financeiro</h1>
+	</div>
+
+</header>
+
+<!--Corpo do documento -->
+<section>
+
+	<ion-content class="has-header has-footer">
+           <div ng-view>
+	
+           </div>
+		   
+		   	   
+	 
+	</ion-content>
+
+	
+	
+	
+</section>
+
+<!-- Corpo do rodape -->
+<footer>
+
+ 
+ <div class="tabs tabs-icon-left">
+  <a class="tab-item" href="#/alimentacao">
+    <i class="icon ion-social-usd"></i>
+    Gastos
+  </a>
+  <a class="tab-item" href="#/cadastrar">
+    <i class="icon ion-edit"></i>
+    Registrar Novo Gasto 
+  </a>
+
+
+  
+</div>
+ 
+ 
+ 
+ 
+</footer>
+
+	<!-- Importando Javascript --> 
+	<script src="scripts/ionic.bundle.min.js"></script>
+	<script src="scripts/angular-route.min.js"></script>
+	
+	<script src="app/iniciar.js"></script>
+	
+	<script src="app/services/servico.js"></script>
+	
+	
+	<script src="app/controller/ctrlAlimentacao.js"></script>
+	
+
+	
+	
+
+
+</body>
+</html>
+<!-- Fim index --> 

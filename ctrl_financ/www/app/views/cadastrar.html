@@ -1,0 +1,40 @@
+<form name="form1" ng-submit="send()">
+<div class="list">
+
+    <label class="item item-input item-stacked-label">
+        <span class="input-label">Descrição:</span>
+        <input ng-model="novoAlimento.descricao" type="text" name="descricao1" required>
+		<span ng-class="error" ng-show="form1.descricao1.$error.required">Preenchimento Obrigatório</span>
+    </label>
+    <label class="item item-input item-stacked-label">
+        <span class="input-label">Valor:</span>
+        <input ng-model="novoAlimento.valor" type="number" placeholder="00,00" name="valor1" required >
+		<span ng-class="error" ng-show="form1.valor1.$error.required">Preenchimento Obrigatório</span>
+    </label>
+	
+	<label class="item item-input item-stacked-label">
+	<label for="singleSelect"> Tipo: </label><br>
+	<select name="singleSelect" ng-model="novoAlimento.tipo" name="select1" required>
+      <option value="Alimentação">Alimentação</option>
+      <option value="Transporte">Transporte</option>
+	  <option value="Geral">Geral</option>
+	</select>
+	</label>
+	
+
+    <label class="item item-input item-stacked-label">
+        <span class="input-label">Data:</span>
+        <input ng-model="novoAlimento.Data" type="date" name="data1"  required>
+		<span ng-class="error" ng-show="form1.data1.$error.required">Preenchimento Obrigatório</span>
+    </label>
+
+ 
+    <button ng-click="cadastrarAlim()" ng-disabled="form1.$invalid" class="button button-full button-positive" >
+        Cadastrar
+    </button>
+
+	
+
+
+</div>
+</form>

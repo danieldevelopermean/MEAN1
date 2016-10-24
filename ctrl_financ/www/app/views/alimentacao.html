@@ -1,0 +1,17 @@
+<div class="list">
+
+
+    <a ng-repeat="alim in alimentos | orderBy : '-Data'" class="item item-icon-left" >
+    Descrição : {{alim.descricao}} <br>
+	Valor: R$ {{alim.valor }} <br>
+	Tipo: {{alim.tipo }}  <br>
+	Data: {{alim.Data | date: 'dd/MM/yyyy' }} <br>
+	  <button class="button button-assertive" ng-click="Deletar2(alim._id)" >Del</button>
+	  <br>
+	
+    </a>
+
+	
+	
+	
+</div>
